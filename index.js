@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-let PORT = process.env.PORT || 5000;
+let PORT = process.env.PORT || 10000;
 
 app.get("/", (req, res) => {
     res.send("Welcome to GlowDerma - Your Skincare Journey Begins Here.");
@@ -43,7 +43,7 @@ app.get("/product/:pid", (req, res) => {
         res.status(200).send(`Your requested product is ${product.name}` )
     }
     else{
-        res.status(404).send(`Product not found`)
+        res.status(404).send("Product not found")
     }
     res.send(`You have requested product ${req.params.pid}`)
 
