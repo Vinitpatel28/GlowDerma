@@ -77,8 +77,8 @@
     "vary": "^1.1.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch --env-file=.env index"
+    "dev": "nodemon app.js",
+    "dev2": "node --watch --env-file=.env index"
   },
   "repository": {
     "type": "git",
